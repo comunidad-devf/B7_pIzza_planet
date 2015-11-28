@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pizza | {{ pizza.name }}</title>
+</head>
+<body>
+	<ul>
+		<li>{{pizza.name}}</li>
+		<li>{{pizza.slices}}</li>
+		<li>{{pizza.brand.name}}</li>
+		<li>Ingredients</li>
+		<ul>
+			{% for ingredient in pizza.ingredients.all %}
+				<li>{{ingredient}}</li>
+			{% endfor %}
+		</ul>
+	</ul>
+</body>
+</html>

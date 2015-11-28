@@ -1,2 +1,2 @@
-# B7_pIzza_planet
+# B7_pizza_planet
 First project in django using Dinosaurs!

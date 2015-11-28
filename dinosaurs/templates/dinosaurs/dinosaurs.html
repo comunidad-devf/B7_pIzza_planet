@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dinosaurs</title>
+</head>
+<body>
+	{% for dinosaur in dinosaurs %}
+		<ul>
+			<li>Name: {{ dinosaur.name }}</li>
+			<li>Age: {{ dinosaur.age }}</li>
+			<li>Color: {{ dinosaur.color }}</li>
+			<li>Dangerous: {{ dinosaur.dangerous }}</li>
+		</ul>
+		{% if dinosaur.dangerous %}
+			<p>¡Cuidado!</p>
+		{% else %}
+			<p>Tranquilo</p>
+		{% endif %}
+	{% endfor %}
+</body>
+</html>

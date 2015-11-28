@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New dinosaur</title>
+</head>
+<body>
+	<form method="POST">
+		{% csrf_token %}
+		name: <input type="text" name="name">
+		age: <input type="text" name="age">
+		color: <input type="text" name="color">
+		dangerous: <input type="checkbox" name="dangerous">
+		<input type="submit">
+	</form>
+</body>
+</html>
